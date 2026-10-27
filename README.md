@@ -7,6 +7,8 @@ equipos del edificio nuevo por planta y oficina, las fallas que reportan los emp
 Los datos de ejemplo salen del proyecto: los 33 sectores y las 86 bocas de red del plano de AutoCAD
 (73 PCs + 13 impresoras en 4 plantas) y los 9 servidores del presupuesto.
 
+Documentación: [cómo está hecha la app](docs/ARQUITECTURA.md) · [manual de uso](docs/MANUAL.md).
+
 ## Qué puede hacer cada usuario
 
 | Rol | Puede |
