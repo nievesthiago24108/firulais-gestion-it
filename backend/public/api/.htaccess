@@ -1,0 +1,4 @@
+# XAMPP / Apache: toda petición a /api/... entra por el front controller.
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

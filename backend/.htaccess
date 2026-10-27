@@ -1,0 +1,2 @@
+# XAMPP / Apache: solo la carpeta public/ es accesible desde el navegador.
+Require all denied

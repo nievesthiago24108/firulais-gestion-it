@@ -1,0 +1,80 @@
+/* Tokens de diseño. Tema oscuro por defecto (identidad del diseño original), claro con data-theme="light". */
+:root {
+  --bg: #060c3f;
+  --bg-sunken: #040934;
+  --panel: #0c1554;
+  --panel-2: #111c63;
+  --panel-hover: #16227089;
+  --line: #1e2a74;
+  --line-strong: #2b3a8f;
+  --text: #e4e7ff;
+  --text-muted: #9aa3d6;
+  --text-faint: #8a93cc;
+  --accent: #3fd3f5;
+  --accent-strong: #7ae3fa;
+  --accent-ink: #032537;
+  --accent-soft: rgba(63, 211, 245, 0.14);
+  --ok: #3ddc97;
+  --ok-soft: rgba(61, 220, 151, 0.14);
+  --warn: #f5b83d;
+  --warn-soft: rgba(245, 184, 61, 0.15);
+  --danger: #ff8592;
+  --danger-soft: rgba(255, 90, 107, 0.15);
+  --info: #bba6fc;
+  --info-soft: rgba(167, 139, 250, 0.16);
+  --neutral-soft: rgba(154, 163, 214, 0.14);
+  --overlay: rgba(2, 5, 30, 0.72);
+  --shadow: 0 18px 40px -18px rgba(0, 2, 30, 0.85);
+  --shadow-pop: 0 24px 60px -12px rgba(0, 2, 30, 0.9), 0 0 0 1px var(--line-strong);
+  --glow: 0 0 0 1px rgba(63, 211, 245, 0.35), 0 0 32px -8px rgba(63, 211, 245, 0.45);
+
+  --font-ui: 'Inter', system-ui, sans-serif;
+  --font-display: 'DM Sans', 'Inter', system-ui, sans-serif;
+  /* escala 1.2 sobre 14px */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-md: 0.875rem;
+  --fs-lg: 1.0625rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: 2.5rem;
+
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 16px;
+  --r-xl: 22px;
+  --sidebar: 248px;
+  --topbar: 64px;
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #eef1fa;
+  --bg-sunken: #e3e8f6;
+  --panel: #ffffff;
+  --panel-2: #f6f8fd;
+  --panel-hover: #eef2fc;
+  --line: #dbe1f1;
+  --line-strong: #c3cce6;
+  --text: #0a1240;
+  --text-muted: #4a5384;
+  --text-faint: #565e86;
+  --accent: #065f7a;
+  --accent-strong: #044b61;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(10, 134, 171, 0.11);
+  --ok: #0b6b47;
+  --ok-soft: rgba(16, 133, 90, 0.11);
+  --warn: #7f5000;
+  --warn-soft: rgba(196, 128, 0, 0.13);
+  --danger: #a81d31;
+  --danger-soft: rgba(200, 40, 60, 0.1);
+  --info: #5532c0;
+  --info-soft: rgba(107, 70, 214, 0.1);
+  --neutral-soft: rgba(74, 83, 132, 0.09);
+  --overlay: rgba(10, 18, 64, 0.45);
+  --shadow: 0 12px 30px -18px rgba(10, 18, 64, 0.35);
+  --shadow-pop: 0 24px 60px -16px rgba(10, 18, 64, 0.4), 0 0 0 1px var(--line);
+  --glow: 0 0 0 1px rgba(10, 134, 171, 0.35), 0 8px 24px -10px rgba(10, 134, 171, 0.45);
+  color-scheme: light;
+}

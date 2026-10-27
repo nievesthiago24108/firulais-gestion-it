@@ -1,0 +1,40 @@
+{
+  "name": "firulais-gestion-it",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf backend/public/assets && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "api": "DB_HOST=127.0.0.1 DB_PORT=3307 DB_USER=firulais DB_PASS=firulais APP_DEBUG=1 php -d extension=pdo_mysql -S 127.0.0.1:8000 -t backend/public",
+    "test:api": "tests/api.test.sh",
+    "db": "tools/dev-db.sh",
+    "test:e2e": "node tests/e2e/flujos.mjs",
+    "test:a11y": "node tests/e2e/accesibilidad.mjs",
+    "seed": "python3 tools/gen_seed.py"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "lucide-react": "^0.525.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.3",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "playwright": "^1.49.1",
+    "vite": "^6.3.5"
+  }
+}
